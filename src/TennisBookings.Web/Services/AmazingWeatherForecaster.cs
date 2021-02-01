@@ -1,15 +1,16 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using TennisBookings.Web.External.Models;
 
 namespace TennisBookings.Web.Services
 {
-    public class WeatherForecaster : IWeatherForecaster
+    public class AmazingWeatherForecaster : IWeatherForecaster
     {
         public WeatherResult GetCurrentWeather()
         {
-            // Pretend we call out to a remote 3rd party API here to get the real forecast
-            // For demo purposes. the result is hardcoded.
-
             return new WeatherResult
             {
                 WeatherCondition = WeatherCondition.Sun
